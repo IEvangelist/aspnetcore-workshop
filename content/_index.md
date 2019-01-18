@@ -14,7 +14,7 @@ We will not spend any time learning MVC or HTML returning endpoints. Instead, we
 
 ## Brief History of ASP.NET
 
-Active Server Pages (ASP) has been around for a long time...Classic was originally introduced in 1996. We've come a long way since then, with dramatic improvements along the way. In 2002 ASP.NET Framework was released alongside version 1.0 of the .NET Framework. Fast forward 13 years in 2015 and ASP.NET 5, later re-branded ASP.NET Core was born.
+Active Server Pages (ASP) has been around for a long time...ASP Classic was originally introduced in 1996. We've come a long way since then, with dramatic improvements along the way. In 2002 ASP.NET Framework was released alongside version 1.0 of the .NET Framework. Fast forward 13 years in 2015 and ASP.NET 5, later re-branded ASP.NET Core was born.
 
 `TODO: ... write the workshop ...`
 
