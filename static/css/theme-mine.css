@@ -116,6 +116,19 @@ a:hover {
     color: var(--MENU-SECTIONS-LINK-HOVER-color);
 }
 
+#sidebar #follow {
+    border-radius: 5px;
+    font-size: 1.2rem;
+    background-color: #1b95e0;
+    padding: 6px 20px;
+    color: #fff;
+}
+
+#sidebar #follow:hover {
+    background-color: #0c7abf;
+    transition: ease-in-out 0.25s;
+}
+
 #sidebar ul li.active > a {
     background: var(--MENU-SECTION-ACTIVE-CATEGORY-BG-color);
     color: var(--MENU-SECTION-ACTIVE-CATEGORY-color) !important;
