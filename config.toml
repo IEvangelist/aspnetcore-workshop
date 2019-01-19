@@ -3,10 +3,11 @@ languageCode = "en-US"
 defaultContentLanguage = "en"
 theme = "hugo-theme-learn"
 metaDataFormat = "yaml"
+title = "ASP.NET Core Essentials"
 defaultContentLanguageInSubdir= true
 
 [params]
-  editURL = "https://github.com/matcornic/hugo-theme-learn/edit/master/exampleSite/content/"
+  editURL = "https://github.com/IEvangelist/ASP.NET-Core-Essentials-Workshop"
   author = "David Pine"
   showVisitedLinks = true
   disableBreadcrumb = false
@@ -15,20 +16,3 @@ defaultContentLanguageInSubdir= true
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
-
-[Languages]
-[Languages.en]
-weight = 1
-languageName = "English"
-
-[[Languages.en.menu.shortcuts]]
-name = "<i class='fab fa-fw fa-github'></i> Github repo"
-identifier = "ds"
-url = "https://github.com/matcornic/hugo-theme-learn"
-weight = 10
-
-[[Languages.en.menu.shortcuts]]
-name = "<i class='fas fa-fw fa-bookmark'></i> Hugo Documentation"
-identifier = "hugodoc"
-url = "https://gohugo.io/"
-weight = 20

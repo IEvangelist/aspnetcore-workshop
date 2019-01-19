@@ -1,4 +1,4 @@
-:root{
+:root {
     
     --MAIN-TEXT-color:#323232; /* Color of text by default */
     --MAIN-TITLES-TEXT-color: #5e5e5e; /* Color of titles h2-h3-h4-h5 */
@@ -29,7 +29,22 @@ body {
     color: var(--MAIN-TEXT-color) !important;
 }
 
-textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, select[multiple=multiple]:focus {
+textarea:focus, 
+input[type="email"]:focus, 
+input[type="number"]:focus, 
+input[type="password"]:focus, 
+input[type="search"]:focus, 
+input[type="tel"]:focus, 
+input[type="text"]:focus, 
+input[type="url"]:focus, 
+input[type="color"]:focus, 
+input[type="date"]:focus, 
+input[type="datetime"]:focus, 
+input[type="datetime-local"]:focus, 
+input[type="month"]:focus, 
+input[type="time"]:focus, 
+input[type="week"]:focus, 
+select[multiple=multiple]:focus {
     border-color: none;
     box-shadow: none;
 }
@@ -90,18 +105,11 @@ a:hover {
 
 #sidebar #my-site {
     color: rgb(45, 45, 45);
+    transition: ease-in-out 0.5s;
 }
 
 #sidebar #my-site:hover {
     color: rgb(80, 80, 80);
-}
-
-#sidebar #twitter-link {
-    color: #1da1f2;
-}
-
-#sidebar #twitter-link:hover {
-    color: #51bafb;
 }
 
 #sidebar a:hover {
