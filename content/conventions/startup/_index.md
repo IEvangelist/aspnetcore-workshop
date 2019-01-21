@@ -62,7 +62,7 @@ public void ConfigureServices(IServiceCollection services)
 ```
 
 {{% notice tip %}}
-If you decide to create custom middleware, remember that there is a very commonly used naming convention. Typically, as a convenience middleware authors will add extension methods on the `IServiceCollection` that allow for the addition of their custom middleware. It is common for these methods to be prefixed with `Add` followed by the name of the service middleware being added. For example, 
+If you decide to create custom middleware, remember that there is a very commonly used naming convention. Typically, as a convenience middleware authors will add extension methods on the `IServiceCollection` that allow for the addition of their custom middleware. It is common for these methods to be prefixed with `Add` followed by the name of the service middleware being added. For example, `.AddAuthentication` to add all the authentication services required for authentication to function.
 {{% /notice %}}
 
 ### Configure

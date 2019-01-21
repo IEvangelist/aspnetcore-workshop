@@ -18,3 +18,9 @@ defaultContentLanguageInSubdir= true
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-github'></i> Github repo"
+identifier = "ds"
+url = "https://github.com/IEvangelist/AspNet.Essentials.Workshop"
+weight = 1
