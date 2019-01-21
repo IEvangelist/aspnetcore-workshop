@@ -1,6 +1,5 @@
 +++
 title = "Developer Workshop"
-date = 2019-01-17T11:49:10-06:00
 weight = 5
 +++
 
