@@ -7,6 +7,4 @@ pre = "<b>8. </b>"
 
 ### Extras
 
-# Some Chapter title
-
-Lorem Ipsum.
+Swagger, Postman & ... That one that existed 
