@@ -8,11 +8,13 @@ defaultContentLanguageInSubdir= true
 
 [params]
   editURL = "https://github.com/IEvangelist/ASP.NET-Core-Essentials-Workshop"
+  description = "ASP.NET Core Essentials - Developer Workshop by David Pine."
   author = "David Pine"
   showVisitedLinks = true
   disableBreadcrumb = false
   disableNextPrev = false
+  disableAssetsBusting = false
   themeVariant = "custom"
 
 [outputs]
-  home = [ "HTML", "RSS", "JSON"]
+home = [ "HTML", "RSS", "JSON"]

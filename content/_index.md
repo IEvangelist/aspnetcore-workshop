@@ -15,7 +15,7 @@ We __will not__ spend any time learning MVC or HTML returning endpoints. Instead
 
 Active Server Pages (ASP) has been around for a long time...ASP Classic was originally introduced in 1996. We've come a long way since then, with dramatic improvements along the way. In 2002 ASP.NET Framework was released alongside version 1.0 of the .NET Framework. Fast forward 13 years to 2015 and ASP.NET 5, later re-branded ASP.NET Core was born! As a technology there has been 23 years of innovation and I'm excited to share this essentials workshop with you all.
 
-{{% notice warning %}}
+{{% notice note %}}
 ASP Classic is a dead and unsupported technology. Do not expect to hear anymore references to it. Likewise, ASP.NET Framework support has a finite lifetime and it is currently believed that soon Microsoft will discontinue support and active development. It is advised to start embracing ASP.NET Core & .NET Core for all future .NET projects.
 {{% /notice %}}
 

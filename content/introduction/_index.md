@@ -7,9 +7,6 @@ pre: "<b>1. </b>"
 
 # Introduction
 
-ASP.NET Core is a cross-platform, high-performance, open-source framework for building modern, cloud-based, Internet-connected applications. With ASP.NET Core, you can:
+This __ASP.NET Core Essentials - Developer Workshop__ was designed with the participant in mind.
 
- - Build web apps and services, IoT apps, and mobile back-ends.
- - Use your favorite development tools on Windows, macOS, and Linux.
- - Deploy to the cloud or on-premises.
- - Run on .NET Core or .NET Framework.
+> __ASP.NET Core__ is a cross-platform, high-performance, open-source framework for building modern, cloud-based, Internet-connected applications.
