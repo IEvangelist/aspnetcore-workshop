@@ -21,14 +21,12 @@ namespace AspNet.Essentials.Workshop
 
         public Startup(IConfiguration configuration) => Configuration = configuration;
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc()
                     .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
@@ -55,6 +53,14 @@ The `ConfigureServices` method has a single parameter of `IServiceCollection`. T
 
 > Use this method to add services to the container.
 
+```cs
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddMvc()
+            .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+}
+```
+
 {{% notice tip %}}
 If you decide to create custom middleware, remember that there is a very commonly used naming convention. Typically, as a convenience middleware authors will add extension methods on the `IServiceCollection` that allow for the addition of their custom middleware. It is common for these methods to be prefixed with `Add` followed by the name of the service middleware being added. For example, 
 {{% /notice %}}
@@ -64,6 +70,23 @@ If you decide to create custom middleware, remember that there is a very commonl
 The `Configure` method has two parameters by default, an implementation of the `IApplicationBuilder` and the `IHostingEnvironment`.
 
 > Use this method to configure the HTTP request pipeline.
+
+```cs
+public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+{
+    if (env.IsDevelopment())
+    {
+        app.UseDeveloperExceptionPage();
+    }
+    else
+    {
+        app.UseHsts();
+    }
+
+    app.UseHttpsRedirection();
+    app.UseMvc();
+}
+```
 
 {{% notice tip %}}
 Since we've already wired up services for dependency injection we could add more parameters to the `Configure` method and they will be correctly resolved. This is not true for the `ConfigureServices` method.
