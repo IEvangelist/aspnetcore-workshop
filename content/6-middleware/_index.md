@@ -7,6 +7,6 @@ pre = "<b>6. </b>"
 
 ### Middleware
 
-# Some Chapter title
+# All About Flow & Precedence
 
-Lorem Ipsum.
+> Middleware is software that's assembled into an app pipeline to handle requests and responses. Each component chooses whether to pass the request to the next component in the pipeline and can perform work before and after the next component in the pipeline.

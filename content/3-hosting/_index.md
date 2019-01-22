@@ -7,4 +7,4 @@ pre = "<b>3. </b>"
 
 ### Hosting
 
-# 
+# All Applications Need A Host
