@@ -1,11 +1,11 @@
 +++
-title = "Logging"
+title = "Routing"
 weight = 7
 chapter = true
 pre = "<b>7. </b>"
 +++
 
-### Logging
+### Routing
 
 # Some Chapter title
 

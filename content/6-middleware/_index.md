@@ -1,11 +1,11 @@
 +++
-title = "Routing"
+title = "Middleware"
 weight = 6
 chapter = true
 pre = "<b>6. </b>"
 +++
 
-### Routing
+### Middleware
 
 # Some Chapter title
 

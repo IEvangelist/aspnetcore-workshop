@@ -16,11 +16,11 @@ Now that we have a project that not only successfully compiles but also executes
    1. Do __not__ add a license
  1. Click the __Create repository__ button
 
-![New Repo](/introduction/github/images/new-repo.png?classes=border,shadow)
+![New Repo](/1-introduction/github/images/new-repo.png?classes=border,shadow)
 
 Now we need to copy the URL of our remote repository.
 
-![Copy Repo](/introduction/github/images/copy-repo.png?classes=border,shadow)
+![Copy Repo](/1-introduction/github/images/copy-repo.png?classes=border,shadow)
 
 In the `File Explorer` navigate to the root directory of your newly created project - at the `.sln` level. From their launch the __Git CLI__. The repo should have already been initialized - we simply need to map our `upstream`. Type the following command - but replace the last argument with your unique URL.
 
@@ -30,7 +30,7 @@ git remote add upstream https://github.com/IEvangelist/AspNet.Essentials.Worksho
 
 You can then verify that this was done correctly, by executing `git remote -v` and viewing what is configured.
 
-![Git Remote](/introduction/github/images/git-remote.png?classes=border,shadow)
+![Git Remote](/1-introduction/github/images/git-remote.png?classes=border,shadow)
 
 Finally, we'll __add__ our changes, __commit__ them and then __push__ everything upstream. This will be our standard development workflow. At anytime you can `git status` to view the current state of things.
 
@@ -52,4 +52,4 @@ git push upstream master
 
 This will push all of our local commits upstream to our remote repository.
 
-![Git Remote](/introduction/github/images/git-flow.png?classes=border,shadow)
+![Git Remote](/1-introduction/github/images/git-flow.png?classes=border,shadow)
