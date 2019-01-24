@@ -2,7 +2,7 @@
 title: "Startup"
 ---
 
-## Navigating the `Startup.cs`
+## <i class="fas fa-code"></i> Navigating the `Startup.cs`
 
 Again, the templates have some less than desirable bits in them - so let's clean this up and continue on building out our application. Please replace the file contents of the `Startup.cs` with the snippet below.
 

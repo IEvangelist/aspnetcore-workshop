@@ -3,4 +3,4 @@ title: "Precedence"
 weight: 2
 ---
 
-# Precedence
+## <i class="fas fa-sort"></i> Precedence

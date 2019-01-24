@@ -3,7 +3,7 @@ title: "File New"
 weight: 3
 ---
 
-## File New
+## <i class="fas fa-folder-plus"></i> File New
 
 From within __Visual Studio__ select `File > New > Project`, then under _Installed > Visual C# > .NET Core_ select `ASP.NET Core Web Application` and enter a _Name_ - then click __Ok__.
 

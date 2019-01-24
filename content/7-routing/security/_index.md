@@ -3,4 +3,4 @@ title: "Security"
 weight: 1
 ---
 
-# Security
+## <i class="fas fa-lock"></i> Security

@@ -5,7 +5,7 @@ chapter = true
 pre = "<b>8. </b>"
 +++
 
-### Security
+### <i class="fas fa-shield"></i> Security
 
 # Focusing On Least Privilege
 

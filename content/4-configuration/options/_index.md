@@ -3,7 +3,7 @@ title: "Options"
 weight: 1
 ---
 
-## The Options Pattern
+## <i class="far fa-check-circle"></i> The Options Pattern
 
 In __ASP.NET Core__ we have many potential sources for which we can map configurations from. The official documentation calls attention to all of the following possible configuration sources:
 

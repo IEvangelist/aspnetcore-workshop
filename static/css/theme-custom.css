@@ -131,3 +131,15 @@ kbd {
 #sidebar hr {
     border-color: var(--MENU-SECTION-HR-color);
 }
+div.notices.info p:first-child:before {
+    content: "\f05a";
+}
+div.notices.warning p:first-child:before {
+    content: "\f071";
+}
+div.notices.note p:first-child:before {
+    content: "\f249";
+}
+div.notices.tip p:first-child:before {
+    content: "\f0eb";
+}

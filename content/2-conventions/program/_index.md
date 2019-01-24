@@ -2,7 +2,7 @@
 title: "Program"
 ---
 
-## Exploring the `Program.cs`
+## <i class="fas fa-terminal"></i> Exploring the `Program.cs`
 
 All __ASP.NET Core__ applications are also console applications, meaning they will have a `Program.cs` and a `Main` entry point. The __Visual Studio__ templates are great as a starting point, but they do leave you with some clean up work. Copy and paste the snippet below and replace this with your `Program.cs` file contents - be sure to __<i class="fas fa-save"></i> Save__!
 

@@ -3,7 +3,7 @@ title: "Environment Variables"
 weight: 2
 ---
 
-## Environment Variables
+## <i class="far fa-hdd"></i> Environment Variables
 
 If you recall from earlier, Environment Variables are one possible configuration source that we implicitly map to. Knowing this, we're going to add the values for the `NasaSettings` that we considered to be sensitive. Execute the following commands:
 

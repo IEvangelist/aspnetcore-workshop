@@ -3,7 +3,7 @@ title: "Prerequisites"
 weight: 1
 ---
 
-## Expectations
+## <i class="fas fa-clipboard-check"></i> Expectations
 
 For the best possible experience there are some basic expectations everyone should be made aware of. It is expected workshop participants that you'll have a general working knowledge of the following:
 

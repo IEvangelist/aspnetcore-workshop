@@ -3,4 +3,4 @@ title: "Templates"
 weight: 2
 ---
 
-# Templates
+## <i class="fas fa-cut"></i> Templates

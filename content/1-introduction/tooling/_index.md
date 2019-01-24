@@ -3,7 +3,7 @@ title: "Tooling"
 weight: 2
 ---
 
-## Tooling
+## <i class="fas fa-tools"></i> Tooling
 
 This workshop includes labs and various exercises intended to familiarize yourself with __ASP.NET Core Essentials__. With that being stated, please have the following software and tools installed before starting:
 

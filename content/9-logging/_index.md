@@ -5,7 +5,7 @@ chapter = true
 pre = "<b>9. </b>"
 +++
 
-### Logging
+### <i class="fas fa-file-signature"></i> Logging
 
 # This Is A Necessity
 

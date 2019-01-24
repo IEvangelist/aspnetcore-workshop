@@ -3,4 +3,4 @@ title: "Examples"
 weight: 1
 ---
 
-# Examples
+## <i class="fas fa-highlighter"></i> Examples
