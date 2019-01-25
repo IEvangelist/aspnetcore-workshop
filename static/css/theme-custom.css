@@ -143,3 +143,8 @@ div.notices.note p:first-child:before {
 div.notices.tip p:first-child:before {
     content: "\f0eb";
 }
+.edgeLabel {
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: -2.5px;
+}

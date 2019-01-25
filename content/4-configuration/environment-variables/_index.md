@@ -19,6 +19,6 @@ We need to restart __Visual Studio__ in order to pick up these environment varia
 
 ### Debug
 
-Add an `IOptions<NasaSettings> options` parameter to the `ConfigureServices` method. Then start your application with debugging, but first set a __breakpoint__ on line 30. Your application should break - I want you to examine the members of the `options` instance to see that the `appsettings.json` file and the Environment Variables are both correctly mapped.
+Add an `IOptions<NasaSettings> options` parameter to the `ConfigureServices` method. Then start your application with debugging, but first set a __breakpoint__ on `if (env.IsDevelopment())` line. Your application should break - I want you to examine the members of the `options` instance to see that the `appsettings.json` file and the Environment Variables are both correctly mapped.
 
 ![Debugging](/4-configuration/environment-variables/images/debug.png?classes=border,shadow)
