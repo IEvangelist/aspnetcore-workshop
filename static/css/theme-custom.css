@@ -133,18 +133,44 @@ kbd {
 }
 div.notices.info p:first-child:before {
     content: "\f05a";
+    font-size: 18px;
+}
+div.notices.info p:first-child:after {
+    font-size: 18px;
+    padding-left: 6px;
 }
 div.notices.warning p:first-child:before {
     content: "\f071";
+    font-size: 18px;
+}
+div.notices.warning p:first-child:after {
+    font-size: 18px;
+    padding-left: 6px;
 }
 div.notices.note p:first-child:before {
     content: "\f249";
+    font-size: 18px;
+}
+div.notices.note p:first-child:after {
+    font-size: 18px;
+    padding-left: 6px;
 }
 div.notices.tip p:first-child:before {
     content: "\f0eb";
+    font-size: 18px;
+}
+div.notices.tip p:first-child:after {
+    font-size: 18px;
+    padding-left: 6px;
 }
 .edgeLabel {
     border-radius: 5px;
     padding: 5px;
     margin-left: -2.5px;
+}
+.attachments > label {
+    font-size: 18px;
+}
+.attachments > label > i {
+    padding-right: 6px;
 }
