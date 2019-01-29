@@ -5,10 +5,10 @@ weight: 2
 
 ## <i class="far fa-hdd"></i> Environment Variables
 
-If you recall from earlier, Environment Variables are one possible configuration source that we implicitly map to. Knowing this, we're going to add the values for the `NasaSettings` that we considered to be sensitive. Execute the following commands:
+If you recall from earlier, Environment Variables are one possible configuration source that we implicitly map to. Knowing this, we're going to add the values for the `BrewerySettings` that we considered to be sensitive. Execute the following commands:
 
 ```
-setx NasaSettings__ApiKey "Pickle Chips" && setx NasaSettings__ApiSecret "s0m3sECRitV@1^*"
+setx BrewerySettings__ApiKey "Pickle Chips"
 ```
 
 When you're done doing this, you should have received a message stating that these values were successfully saved.
@@ -19,6 +19,6 @@ We need to restart __Visual Studio__ in order to pick up these environment varia
 
 ### Debug
 
-Add an `IOptions<NasaSettings> options` parameter to the `ConfigureServices` method. Then start your application with debugging, but first set a __breakpoint__ on `if (env.IsDevelopment())` line. Your application should break - I want you to examine the members of the `options` instance to see that the `appsettings.json` file and the Environment Variables are both correctly mapped.
+Add an `IOptions<BrewerySettings> options` parameter to the `ConfigureServices` method. Then start your application with debugging, but first set a __breakpoint__ on `if (env.IsDevelopment())` line. Your application should break - I want you to examine the members of the `options` instance to see that the `appsettings.json` file and the Environment Variables are both correctly mapped.
 
 ![Debugging](/4-configuration/environment-variables/images/debug.png?classes=border,shadow)

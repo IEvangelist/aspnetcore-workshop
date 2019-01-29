@@ -9,4 +9,4 @@ pre = "<b>5. </b>"
 
 # The Botox <i class='fas fa-syringe'></i> Of Code
 
-Dependency Injection enables code to be more easily unit tested and simplifies code usage by decoupling. Code is often more clean, readable and as a result more maintainable.
+Dependency Injection enables code to be more easily unit tested and simplifies code usage by decoupling. Code is often cleaner, more readable and as a result more maintainable.
