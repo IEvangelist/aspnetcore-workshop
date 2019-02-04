@@ -1,4 +1,5 @@
-﻿namespace AspNet.Essentials.Workshop.Models {
+﻿namespace AspNet.Essentials.Workshop.Models
+{
     public class Results
     {
         public int CurrentPage { get; set; }

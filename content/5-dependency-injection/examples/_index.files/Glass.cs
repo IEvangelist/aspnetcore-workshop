@@ -1,4 +1,5 @@
-﻿namespace AspNet.Essentials.Workshop.Models {
+﻿namespace AspNet.Essentials.Workshop.Models
+{
     public class Glass
     {
         public int Id { get; set; }

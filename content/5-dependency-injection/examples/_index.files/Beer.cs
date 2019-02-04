@@ -6,7 +6,7 @@
         public string Name { get; set; }
         public string NameDisplay { get; set; }
         public string Description { get; set; }
-        public string Abv { get; set; }
+        public float Abv { get; set; }
         public string Ibu { get; set; }
         public int StyleId { get; set; }
         public string IsOrganic { get; set; }

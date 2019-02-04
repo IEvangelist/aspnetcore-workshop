@@ -15,16 +15,20 @@
 		{{if ($.Get "pattern")}}
 			{{if (findRE ($.Get "pattern") .Name)}}
 				<li>
-					<a href="{{ (printf "%s%s/%s" $fileDir ($.Scratch.Get "filesName") .Name) | relURL }}"  target="_blank">
-						{{.Name}}
+					<a href="{{ (printf "%s%s/%s" $fileDir ($.Scratch.Get "filesName") .Name) | relURL }}"
+					   target="_blank" download
+					   title="Download {{ .Name }}">
+						<i class="fas fa-file-download"></i> {{.Name}}
 					</a>
 					({{ math.Ceil $fileSize }} KB)
 				</li>
 			{{end}}
 		{{else}}
 			<li>
-				<a href="{{ (printf "%s%s/%s" $fileDir ($.Scratch.Get "filesName") .Name) | relURL }}" target="_blank">
-					{{.Name}}
+				<a href="{{ (printf "%s%s/%s" $fileDir ($.Scratch.Get "filesName") .Name) | relURL }}" 
+				   target="_blank" download
+				   title="Download {{ .Name }}">
+					<i class="fas fa-file-download"></i> {{.Name}}
 				</a>
 				({{ math.Ceil $fileSize }} KB)
 			</li>
