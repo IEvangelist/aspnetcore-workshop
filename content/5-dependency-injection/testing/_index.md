@@ -50,7 +50,7 @@ Right-click on the unit test project and click `Manage NuGet Packages...`. Selec
 
 Unit testing should 
 
-### Not Worthwhile
+### Not Worthwhile Tests
 
 ```csharp
 using AspNet.Essentials.Workshop.Configuration;

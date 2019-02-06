@@ -12,6 +12,8 @@ But first, <a href='https://www.brewerydb.com/signup' target='_blank'>we need to
  1. Verify that the _Sandbox URL_ matches the corresponding `appsettings.json` node
  2. Use the _Sandbox Key_ for the following command argument 
 
+![Sandbox API Key](/4-configuration/environment-variables/images/sandbox.png?classes=shadow,border)
+
 Execute the following command:
 
 ```
