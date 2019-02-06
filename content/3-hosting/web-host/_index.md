@@ -62,5 +62,36 @@ There are no performance implications either way. The choice is yours and depend
 
 ### Application Lifetime Events
 
-Developers who are coming from the __ASP.NET Framework__ world are accustomed to various application life-cycle hooks. Things like `App_Start` and `App_End` have since been replaced conceptually with another approach. The `IApplicationLifetime` interface provides several key `CancellationToken` properties. They are exposed such that developer's can register an `Action` to be executed on their occurrence. Add the `IApplicationLifetime` as an argument to the `Startup.Configure` method signature. 
+Developers who are coming from the __ASP.NET Framework__ world are accustomed to various application life-cycle hooks. Things like `App_Start` and `App_End` have since been replaced conceptually with another approach. The `IApplicationLifetime` interface provides several key `CancellationToken` properties. They are exposed such that developer's can register an `Action` to be executed on their occurrence. Add the `IApplicationLifetime` and `ILogger<Startup>` interfaces as arguments to the `Startup.Configure` method signature.
 
+```csharp
+public void Configure(
+    IApplicationBuilder app,
+    IHostingEnvironment env,
+    IApplicationLifetime lifetime,
+    ILogger<Startup> logger)
+{
+    // omitted for brevity...
+}
+```
+
+Next, add the following methods to the start up class.
+
+```csharp
+static void OnStarted(ILogger logger)
+    => logger.LogInformation("The application has started... post-startup logic here.");
+
+static void OnStopping(ILogger logger)
+    => logger.LogInformation("The application has stopping... stopping logic here.");
+
+static void OnStopped(ILogger logger)
+    => logger.LogInformation("The application has stopped... post-stopped logic here.");
+```
+
+Now, we'll register delegates that act as callbacks. They'll be invoked at different points in the application lifetime.
+
+```csharp
+lifetime.ApplicationStarted.Register(o => OnStarted(o as ILogger), logger);
+lifetime.ApplicationStopping.Register(o => OnStopping(o as ILogger), logger);
+lifetime.ApplicationStopped.Register(o => OnStopped(o as ILogger), logger);
+```
