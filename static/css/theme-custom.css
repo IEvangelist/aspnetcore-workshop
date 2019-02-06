@@ -174,3 +174,17 @@ div.notices.tip p:first-child:after {
 .attachments > label > i {
     padding-right: 6px;
 }
+
+.wave {
+    animation: wave 0.25s alternate infinite;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(10deg);
+    }
+}

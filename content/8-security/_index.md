@@ -5,8 +5,8 @@ chapter = true
 pre = "<b>8. </b>"
 +++
 
-### <i class="fas fa-shield"></i> Security
+# Security <i class="fas fa-shield-alt"></i>
 
-# Focusing On Least Privilege
+Security <i class="fas fa-shield-alt"></i> is a three part chapter covering, `Identity`, `Authentication` and `Authorization`.
 
-Security is a three part chapter covering, `Identity`, `Authentication` and `Authorization`.
+![Middle](/8-security/images/security.jpg?classes=shadow,border)
