@@ -180,11 +180,8 @@ div.notices.tip p:first-child:after {
 }
 
 @keyframes wave {
-    0% {
-        transform: rotate(-10deg);
-    }
-
-    100% {
-        transform: rotate(10deg);
-    }
+    0% { transform: rotate(-10deg); }
+    15% { transform: rotate(-6deg); }
+    85% { transform: rotate(6deg); }
+    100% { transform: rotate(10deg); }
 }

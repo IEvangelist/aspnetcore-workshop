@@ -9,4 +9,4 @@ pre: "<b>1. </b>"
 
 > __ASP.NET Core__ is a cross-platform, high-performance, open-source framework for building modern, cloud-based, Internet-connected applications. <cite><a href='https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-2.2' target='_blank'>Microsoft - ASP.NET Core Docs Team</a></cite>
 
-![Marathon - Not a Race](/1-introduction/images/marathon.jpg?classes=shadow,border)
+![Pairing](/1-introduction/images/pairing.jpg?classes=shadow,border)
