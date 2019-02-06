@@ -5,14 +5,14 @@ weight: 1
 
 ## <i class="fas fa-highlighter"></i> Examples
 
-In the root of the project, create the following folders:
+In the root of the project, add the following folders:
 
  - Abstractions
  - Enums
  - Models
  - Services
 
- In the _Enums_ folder add a new `enum` file named `Sex.cs`.
+At this point we'll add the models and enums to the folders. Then later we'll walk through the process of adding abstractions and corresponding implementations. In the _Enums_ folder add a new `enum` file named `Sex.cs`.
 
 ```csharp
 namespace AspNet.Essentials.Workshop.Enums
