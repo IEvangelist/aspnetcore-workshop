@@ -48,9 +48,11 @@ Right-click on the unit test project and click `Manage NuGet Packages...`. Selec
 
 ## Writing Unit Tests
 
-Unit testing should 
+> To test, or not to test: that is the question: Whether 'tis nobler in the mind to suffer The bugs and disruption of outrageous code, Or to take arms against a sea of developers, And by opposing end them? <cite>David Pine</cite>
 
 ### Not Worthwhile Tests
+
+Delete the `UnitTest1.cs` file. Add a new __C#__ class named `BreweryClientTests.cs` and copy the contents below into this file.
 
 ```csharp
 using AspNet.Essentials.Workshop.Configuration;
@@ -90,6 +92,8 @@ namespace AspNet.Essentials.WorkshopTests
 
 ### Worthwhile Tests
 
+Add a new __C#__ class named `BloodAlcoholContentTests.cs` and copy the following snippet into the file.
+
 ```csharp
 using AspNet.Essentials.Workshop.Abstractions;
 using AspNet.Essentials.Workshop.Enums;
@@ -110,19 +114,17 @@ namespace AspNet.Essentials.WorkshopTests
             => _sut = new BloodAlcoholCalculator();
 
         [Fact]
-        public void CalculateBloodAlcoholCorrectlyCalculates()
+        public void CalculateBloodAlcoholIsNonZero()
         {
-            var beers = new Beer[]
+            var beers = new Beer[] 
             {
-                new Beer { Abv = 7.2 },
-                new Beer { Abv = 9.6 },
-                new Beer { Abv = 12.7 }
+                new Beer { Abv = 5 }
             };
 
-            var expected = 0.0996;
-            var actual = _sut.Calculate(225, 3, Sex.Male, beers);
+            var expected = 0d;
+            var actual = _sut.Calculate(225, 5, Sex.Male, beers);
 
-            Assert.Equal(Math.Round(expected, 4), actual);
+            Assert.Equal(expected, actual);
         }
 
         [

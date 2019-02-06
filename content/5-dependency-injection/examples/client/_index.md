@@ -20,9 +20,7 @@ namespace AspNet.Essentials.Workshop.Abstractions
 }
 ```
 
-This interface exposes an asynchronous function that promises to eventually yield a `Results` object. Let's define that object and several others.
-
-In the _Services_ folder add a `BreweryClient.cs` file, and paste the snippet below into it.
+This interface exposes an asynchronous function that promises to eventually yield a `Results` object. In the _Services_ folder add a `BreweryClient.cs` file, and paste the snippet below into it.
 
 ```csharp
 using AspNet.Essentials.Workshop.Abstractions;
@@ -112,4 +110,4 @@ namespace AspNet.Essentials.Workshop.Controllers
 }
 ```
 
-This controller uses the `[FromServices]` attribute, which instructs the runtime to look in the `IServiceProvider` collection of services for a corresponding implementation. In this case the `BreweryClient` matches and is then injected into our controller `Get` action. We asynchronously await the invocation to the `GetBeersAsync` method and return it as a `JsonResult`.
+This controller uses the `[FromServices]` attribute, which instructs the runtime to look in the `IServiceProvider` collection of services for a corresponding implementation. In this case the `BreweryClient` matches and is then injected into our controller `Get` action. We asynchronously await the invocation to the `GetBeersAsync` method and return it as a `JsonResult`. We'll discuss the endpoints in routing.
