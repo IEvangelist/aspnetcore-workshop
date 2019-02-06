@@ -21,9 +21,9 @@ For our application, we only need to rely on two - the settings files and enviro
 As a developer you're ultimately responsible for actively thinking about security throughout the entire development life cycle. Never store sensitive data, such as passwords or secrets in settings files for configuration.
 {{% /notice %}}
 
-## The `appsettings` File
+## The `appsettings.json` File
 
-You may have noticed that there is an `appsettings.json` file in the root of our project. This file contains settings for our application. This file is loaded into our application at start up - it's what is injected into the `Startup` classes constructor as the `IConfiguration` interface. We can use this configuration instance to configure a mapping to a __C#__ settings class. Now add a folder named `Configuration` - then add a new __C#__ file named `BrewerySettings` with the contents below.
+You may have noticed that there is an `appsettings.json` file in the root of our project. This file contains settings for our application. This file is loaded into our application at start up. During the start up an instance of the `IConfiguration` is injected into the `Startup` class constructor. This has the settings from the JSON file as well as all the other sources that were available. We can use this configuration instance to configure a mapping to a strongly-typed __C#__ settings class. Add a folder named _Configuration_ - then add a new __C#__ file named `BrewerySettings.cs` with the contents below.
 
 ```csharp
 using System;
@@ -32,7 +32,14 @@ namespace AspNet.Essentials.Workshop.Configuration
 {
     public class BrewerySettings
     {
+        /// <summary>
+        /// The base URL to the BreweryDB API endpoint.
+        /// </summary>
         public Uri BaseUrl { get; set; }
+
+        /// <summary>
+        /// The BreweryDB API key, used to execute API calls.
+        /// </summary>
         public string ApiKey { get; set; }
     }
 }
@@ -49,7 +56,7 @@ services.Configure<BrewerySettings>(
 You will need to also add a `using AspNet.Essentials.Workshop.Configuration` statement.
 {{% /notice %}}
 
-At this point the application is going to take the `appsettings.json` contents and attempt to map it to an instance of our `BrewerySettings` class wrapped in an `IOptions` interface. The only problem is that our JSON file doesn't have any custom settings - let's add some. Copy the snippet below , replacing the contents of the `appsettings.json` file.
+At this point the application is going to take the `appsettings.json` contents and map it to an instance of our `BrewerySettings` class wrapped in an `IOptions` interface. The only problem is that our JSON file doesn't have any custom settings - let's add some. Copy the snippet below , replacing the contents of the `appsettings.json` file.
 
 ```json
 {
@@ -60,13 +67,13 @@ At this point the application is going to take the `appsettings.json` contents a
   },
   "AllowedHosts": "*",
   "BrewerySettings": {
-    "BaseUrl": "https://www.weather.gov/api/v2",
-    "ApiKey": "[ NEVER DO THIS ]"
+    "BaseUrl": "https://sandbox-api.brewerydb.com/v2/",
+    "ApiKey": "[ NEVER STORE SENSITIVE DATA HERE ]"
   } 
 }
 ```
 
-Notice that while we have two potentially sensitive bits of information, we're not actually placing them in this file. That would be a HUGE mistake.  Instead, these are best as "Environment Variables", Azure Key Vault, other secure mechanisms - more on that later. Now we have contents in our __JSON__ that will map to our __C#__ instance. This will enable the controllers and services to take on an `IOptions<BrewerySettings>` parameter in their constructor. More details regarding this in the "Dependency Injection" chapter later.
+Notice that while we have potentially sensitive bits of information, we're not actually placing it in this file. That would be a _HUGE_ mistake.  Instead, these are best as "Environment Variables", Azure Key Vault, User Secrets or other secure mechanisms - more on that later. Now we have contents in our __JSON__ that will map to our __C#__ instance. This will enable the controllers and services to take on an `IOptions<BrewerySettings>` parameter in their constructor. We will cover "Dependency Injection" in a later chapter.
 
 #### Additional Resources
 
